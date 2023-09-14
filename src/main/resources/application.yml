@@ -1,0 +1,25 @@
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    org:
+      tools:
+        dev:
+          agile:
+            projectfeaturestart: OFF
+
+app:
+  default:
+      feature-type: feature
+      branch-develop: develop
+      branch-release: release
+  progress-bar:
+    min: 0
+    max: 100
+    step: 2
+    listener:
+      # Time in miliseconds
+      duration: 100
+      socket-port: 10000
